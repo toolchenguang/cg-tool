@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+</html>
+<script>
+	// new Promise((reslove,reject)=>{
+
+	// 	console.log("我开始吃饭了");
+	// 	reslove("我吃完饭了")
+
+	// }).then(resloveValue=>{
+	// 	console.log("我要加班了")
+	// 	console.log(resloveValue);
+
+
+	// 	reslove("我加班完毕");
+	// }).then(resloveValue1=>{
+	// 	console.log("reslove2")
+	// 	console.log(resloveValue1);
+	// })
+	// eat().then(data=>{
+	// 	console.log(data);
+	// 	return work();
+	// }).then(data=>{
+	// 	console.log(data);
+	// 	return goHome();
+	// }).then(data=>{
+	// 	console.log(data);
+	// })
+
+
+	// function eat(){
+	// 	return new Promise((reslove,reject)=>{
+	// 		console.log("我吃饭了");
+	// 		reslove("我吃完饭了")
+	// 	}) 
+	// }
+	// function work(){
+	// 	return new Promise((reslove,reject)=>{
+	// 		console.log("我工作了");
+	// 		reslove("我下班了")
+	// 	}) 
+	// }	
+	// function goHome(){
+	// 	return new Promise((reslove,reject)=>{
+	// 		console.log("我要回家了");
+	// 		reslove("我到家了")
+	// 	}) 
+	// }	
+
+
+	// var obj ={
+	// 	name:(function(){
+
+	// 		return "泰多"
+	// 	}()),
+	// 	getName:function(){
+	// 		return this.name;
+	// 	}
+	// }
+
+	// console.log(obj.getName())
+
+
+
+
+
+	let dispatchMessage = {
+		list:{},
+		listen(key,fn){
+			this.list[key] = (fn);
+		},
+		issue(eventName,str){
+			for(let item in this.list){
+				this.list[item].apply(this,[str])
+			}
+		}
+	}
+	dispatchMessage.listen('message',function(){
+		console.log(arguments);
+	})
+
+	dispatchMessage.issue('message',"我触发了事件")
+
+
+
+
+
+</script>
