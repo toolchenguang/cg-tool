@@ -1,0 +1,133 @@
+/**
+应用程序顶部菜单的总体样式
+ */
+.appMenu{
+    list-style:none;
+    display: block;
+    white-space: nowrap;
+    /*background-color: #242424;*/
+    background: repeating-linear-gradient(rgb(254,254,255),rgb(229,234,245) 37%,rgb(212,219,237) 38%,rgb(225,230,246) 100%);
+    color: black;
+    padding:2px;
+    margin:0px;
+    height: 20px;
+    border-bottom: 1px solid rgb(182,188,204);
+    z-index: 9999;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+/**
+右键菜单的总体样式
+ */
+.rightMenu{
+    background-color: red;
+    color: black;
+    padding: 0px;
+    margin:0px;
+    z-index: 9999;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+/**
+分隔线的总体样式
+ */
+.separator-menuItem{
+    height:1px;
+    background-color: #DADADA;
+}
+
+/**
+一级节点的样式，如果是一级节点 并且是appMenu，横向排列
+ */
+.normal-menuItem-first{
+    position:relative;
+    height:100%;
+    border: 1px solid rgba(182,188,204,0);
+    /*background-color: #242424;*/
+    background: repeating-linear-gradient(rgb(254,254,255),rgb(229,234,245) 37%,rgb(212,219,237) 38%,rgb(225,230,246) 100%);
+    display: inline-block;
+    padding: 0px 12px 0px 12px;
+}
+.normal-menuItem-first:hover{
+    border: 1px solid rgb(182,188,204);
+    border-radius: 3px;
+}
+
+/**
+非一级节点li样式
+ */
+.normal-menuItem{
+    position: relative;
+    height:28px;
+    background-color: #ECECEE;
+    color: black;
+    padding: 0px 10px;
+
+}
+.normal-menuItem img{
+    width: 28px;
+    height: 28px;
+    margin: 0px 5px 0px -10px;
+}
+.normal-menuItem:hover{
+    background-color: #DDDDDD;
+}
+/**
+一级节点ul样式
+ */
+.normal-menu-first{
+    list-style: none;
+    position: absolute;
+    left:-40px;
+    top:21px;
+    z-index: 9999;
+}
+
+/**
+非一级节点ul样式
+ */
+.normal-menu{
+    list-style: none;
+    position: absolute;
+    top:5px;
+    z-index: 9999;
+}
+
+/**
+非一级节点标签的样式
+ */
+.normal-menuItem-label{
+    position: absolute;
+    top: 4px;
+}
+
+/**
+非一级节点快捷键的样式
+ */
+.normal-menuItem-accelerator{
+    vertical-align: middle;
+    position: absolute;
+    top: 4px;
+}
+
+/**
+非一级节点向右菜单
+ */
+.normal-menuItem-right{
+    vertical-align: middle;
+    width: 0px;
+    height: 0px;
+    border-top:5px solid transparent;
+    border-right:5px solid transparent;
+    border-bottom:5px solid transparent;
+    border-left:5px solid black;
+    position:absolute;
+    right:0px;
+    top: 9px;
+}

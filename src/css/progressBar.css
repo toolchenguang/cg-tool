@@ -1,0 +1,86 @@
+/* 基础样式 */
+.progressBar {
+    padding-right: 40px;
+    position: relative;
+}
+.progressBar .progressBar-bg {
+    position: relative;
+    width:100%;
+    height: 14px;
+    background:#e9e7e7;
+    border-radius:3px;
+    margin-top:20px;
+    border-radius:20px;
+    box-shadow: 1px 0px 5px #dddddd inset, 
+                -1px 0px 5px #dddddd inset, 
+                0px 1px 5px #dddddd inset, 
+                0px -1px 5px #dddddd inset
+}
+ 
+.progressBar .progressBar-bg .progressBar-progress{
+    position: absolute;
+    top:0px;
+    left:0px;
+    border-radius:20px;
+    width:0px;
+    height: 100%; 
+    text-align:right;
+    /* padding-right:1px; */
+    box-sizing: border-box;
+    color:#fff;
+    font-size:12px;
+    line-height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: all 0.5s linear;
+}
+.progressBar .progressBar-val {
+    position: absolute; 
+    background: none;
+    border: none;
+    transition: all .5s linear;
+    left: 0;
+}
+
+
+/* 单色UI */
+.progressBar-barStyle-singleColor .progressBar-Bg{
+    background:rgb(224, 224, 224);
+}
+.progressBar-barStyle-singleColor .progressBar-progress{
+    background:green; 
+}
+/* 渐变色UI */
+.progressBar-barStyle-Gradual .progressBar-Bg{
+    background:rgb(224, 224, 224);
+}
+.progressBar-barStyle-Gradual .progressBar-progress{
+    background-color: #149BDF;           
+    background-image: linear-gradient(45deg, 
+    rgba(255, 255, 255, 0.15) 25%, 
+    transparent 25%, transparent 50%,
+    rgba(255, 255, 255, 0.15) 50%, 
+    rgba(255, 255, 255, 0.15) 75%, 
+    transparent 75%, transparent);             
+    background-size: 40px 40px; 
+}
+.progressBar-percentStyle-top {
+    font-size:12px;
+    top: -16px;
+    left: 0px;
+}
+
+.progressBar-percentStyle-center {
+    top: 0px;
+    font-size:12px;
+    transform: translateX(-50%);
+    color:#fff;
+}
+
+.progressBar-percentStyle-right {
+    right: 0px !important;
+    top: 0px !important;
+    left: auto !important;
+}
+ 

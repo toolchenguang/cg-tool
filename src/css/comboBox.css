@@ -1,0 +1,157 @@
+/******************* 基础样式 ********************/
+.comboBox {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle;
+    line-height: normal;
+}
+.comboBox-selection { 
+    display: block;
+    box-sizing: border-box;
+    outline: 0;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: all .2s ease-in-out;
+    /* z-index: 2; */
+    border: 1px solid #000;
+}
+
+.comboBox-selection div {
+    width: 10px;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transition: all .2s ease-in-out; 
+    margin-top: -8px;
+}
+
+.comboBox-selection-placeholder {
+    padding-left: 8px;
+    padding-right: 24px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.comboBox-selection-arrow {
+    width: 0;
+    height: 0;
+    border-top: 7px solid #80848f;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    position: absolute;
+    transform: translateY(59%);       
+}
+.comboBox-dropdown {
+    position: absolute;
+    width: 100%;
+    transform-origin: center bottom 0px;
+    display: none;
+    will-change: top, left;
+    overflow: auto;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 0px 0px 4px 4px; 
+    z-index: 1;  
+    border: 1px solid #000;
+    max-height: 150px;
+    overflow-x: hidden;
+}
+
+.comboBox-dropdown-list {
+    /* height: 150px; */
+}
+
+
+
+.comboBox-dropdown-notfound {
+    display: none;
+}
+
+.comboBox-dropdown-loading {
+    /* display: none; */
+}
+
+.comboBox-transform{
+    transform: rotate(180deg);
+    transform-origin:50% 50%;  
+}
+.comboBox-disable{
+    border: 1px solid #dddee1 !important;
+    background:#f3f3f3 !important;
+    color:#ccc !important;
+}
+.comboBox-disable:hover {
+    cursor:not-allowed;
+    border:1px solid #dddee1 !important;
+}
+/******************* 默认橙色样式 ********************/
+.comboBox-defaultStyle {
+    font-size: 14px;
+    width: 200px;
+    color: #495060;
+}
+.comboBox-defaultStyle .comboBox-selection {
+    border: 1px solid #dddee1;
+}
+
+.comboBox-defaultStyle .comboBox-selection:hover {
+    border: 1px solid #fabc30;
+}
+
+.comboBox-defaultStyle .comboBox-selection-placeholder {
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    padding-left: 8px;
+    padding-right: 24px;
+}
+.comboBox-defaultStyle .comboBox-selection-arrow {
+    border-top: 7px solid #80848f;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    transform: translateY(59%); 
+}
+
+.comboBox-defaultStyle .comboBox-dropdown {
+    /* top: 30px; */
+    border: 1px solid #dddee1;
+    overflow: hidden;
+    padding: 1px;
+}
+.comboBox-defaultStyle .comboBox-dropdown-notfound {
+    padding: 5px;
+}
+
+.comboBox-defaultStyle .comboBox-dropdown-loading {
+    padding: 5px;
+}
+.comboBox-defaultStyle .comboBox-dropdown-item {
+    padding: 5px;
+}
+.comboBox-defaultStyle .comboBox-dropdown-item:hover{
+    background: #f3f3f3;
+}
+.comboBox-defaultStyle .comboBox-selectStyle {
+    background:#fabc30;
+    color:#fff
+}
+.comboBox-defaultStyle .comboBox-selectStyle:hover {
+    background:#fabc30;
+    color:#fff
+}
+
+/******************* 自定义样式 ********************/
+.mystyle {
+    width: 150px;
+}
+.mystyle .comboBox-selection {
+    border:1px solid #fabc30;
+    background:#fabc30
+}

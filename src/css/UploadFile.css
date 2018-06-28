@@ -1,0 +1,16 @@
+.UploadFile_color{
+    background-color: #449d44;
+}
+.UploadFile_inline{
+    display: inline;
+    padding: 3px 15px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor:pointer;
+    margin-right: 10px;
+}
+.UploadFile_disable{
+    background-color: gray;
+    color: #333333;
+}

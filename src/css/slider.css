@@ -1,0 +1,139 @@
+/* 
+ * @Message:  
+ * @Author: 了恨 
+ * @Date: 2018-06-11 17:48:01 
+ * @Last Modified by: 了恨
+ * @Last Modified time: 2018-06-27 11:36:45
+ */
+
+/* Don't change,don't move! start*/
+.VERTICAL_SHOW{
+    transform: rotate(90deg);
+}
+div.HEART_SHOW{
+    background-color: rgba(0,0,0,0);
+}
+/* Don't change,don't move! end*/
+.normal_outer{
+    border: 3px solid #9ecff0;
+    background: #9ecff0;
+    border-radius: 5px;
+    position: relative; 
+    /* top: 30vh; 
+    left: 30vw;    */
+}
+.normal_inner{
+    background: #4f64db;
+    border: 3px solid #4f64db;
+    border-radius: 5px;
+}
+.normal_slider{
+    background: #1fc543;
+    border-radius: 5px;
+    position: absolute;
+    top:-10px;
+}
+.normal_heart{
+    background: #1fc5b7;
+    border-radius: 3px;
+    position: absolute;
+    top: 5px;
+}
+/* 
+liaohen demo
+*/
+.picShake{
+    background: #f0f0f0;
+    margin: 50px 100px;
+    width: 400px;
+    height: 320px;
+    border: 1.5px solid #000000;
+}
+header{
+    height: 40px;
+    background: #535353;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.timeDown,.shakeUp{
+    position: relative;
+    margin: 20px auto;
+    padding: 1px;
+    width: 320px;
+    height: 160px;
+    background: #ffffff;
+    border-radius: 5px;
+}
+.bg1{
+    background: #d3d3d3;
+    border-radius: 5px;
+    height: 100%;
+    padding: 1px;
+    box-sizing: border-box;
+}
+.bg2{
+    background: #f0f0f0;
+    border-radius: 5px;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.shakeText{
+    position: absolute;
+    top: -13px;
+    left: 10px;
+    display: inline-block;
+    background: #f0f0f0;
+    padding: 3px;
+}
+.speedWrap,.powerWrap{
+    margin-bottom: 15px;
+}
+.outerPower{
+    display: inline-block;
+    border: none;
+    position: relative;
+    border-radius: 0;
+    margin-right: 15px;
+}
+.innerPower{
+    background: #e7eaea;
+    border: 1px solid #d6d6d6;
+    border-radius: 0;
+}
+.sliderPower{
+    border-radius: 0;
+    width: 11px;
+    height: 18px;
+    position: absolute;
+    background: url('../../images/slider1.png') no-repeat;
+}
+.notice{
+    margin-left: 72px;
+    color: red;
+    font-size: 13px;
+}
+.timeDown{
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 0;
+    width: 135px;
+    height: 50px;
+}
+.frame{
+    display: inline-block;
+    margin-left: 5px;
+}
+.buttonWrap{
+    float: right;
+    margin: 3px 30px 0 0;
+}
+.buttonWrap button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: none;
+    margin-right: 10px;
+}
